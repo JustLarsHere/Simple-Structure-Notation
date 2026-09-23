@@ -2,11 +2,14 @@
 
 SSN is a very simple notation system that allows one to describe and represent most data structures. In addition, SDN (Simple Data Notation) is a version of SSN that allows you to represent small pieces of the data itself.
 
-As of now, this notation has no defined use.
+As of now this notation has no defined use but it may be used to:
+- serve as a compact, human-readable way to describe data structures and relationships without needing full diagrams or complex schema languages.
+- feed a machine-readable mini-language for representing data structures directly
+- automatically generate diagrams/schemas
 
 ## Syntax
 
-SSN is made up of items, enumerations, and operators. Below is a list of these elements and how they are used to represent data structures.
+SSN 1.0 is made up of items, enumerations, and operators. Below is a list of these elements and how they are used to represent data structures.
 
 ### Expressions
 
@@ -36,7 +39,7 @@ To properly represent data structures with SSN, you use items, enumeration, and 
 
 Below are some examples with step-by-step instructions showing how the final expression is built.
 
-## University Data
+### University Data
 
 Imagine a database for a university. A university has courses. Each of these courses has students and a professor.
 
@@ -64,6 +67,10 @@ Now that we have our two expressions, `u` for the university and `c ← (s...,p)
 `u ← (c ← (s...,p))`
 
 This gives us a single expression representing the complete structure.
+
+### Other Short Examples
+`shop ← (customer..., order ← (item1..., payment))`
+`user ← (name, email, post... ← (title, comment...))`
 
 ### FAQ
 
