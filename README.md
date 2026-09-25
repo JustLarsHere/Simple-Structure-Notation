@@ -67,7 +67,7 @@ Sometimes more than one operator acts upon an operand or expression. Here are so
 ### Extra Notes
 Due to the diversity of existing data formats, SDN does not strictly differentiate between categories and items. This is not an accidental limitation, but an intentional feature. It is up to the user to define whether an item that contains other items represents an array, an object, a record, a placeholder name, or another kind of structure.
 
-Unlike SSN, repeated labels in SDN do not inherently refer to the same item. Each occurrence starts its own independent data branch unless the surrounding structure explicitly defines otherwise. For example:
+Unlike SSN, repeated labels in SDN do not inherently refer to the same item. Each occurrence starts is treated independently. For example:
 
 ```
 a←b
