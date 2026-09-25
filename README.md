@@ -20,7 +20,6 @@ Represent the different objects in a structure. In a family tree, this might be 
 - `x|y` establishes that either `x` or `y` can fill the given position.
 - `x&y` establishes that `x`, `y`, or both may fill the given position.
 - `x ←p (expr)` establishes a recursive relationship in which occurrences of `x` inside the expression refer back to the same structure, allowing the relationship to propagate recursively.
-- `x?` / `(expr)?` establishes that the item or group might not exist, or that it is unclear whether it is present.
 - `x↔y` establishes that the two items are bidirectionally related.
 - `[x,y,z]` establishes that all items in the group are related to each other.
 - `x...` establishes that a construct can occur multiple times.
